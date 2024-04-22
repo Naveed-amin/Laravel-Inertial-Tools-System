@@ -121,4 +121,8 @@
   <!-- Container wrapper -->
 </nav>
 <!-- Navbar -->
+<div>
+  <slot />
+</div>
+
 </template>

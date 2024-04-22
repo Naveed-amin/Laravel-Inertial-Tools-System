@@ -1,11 +1,15 @@
 <template>
-    <div class="centered-content">
+    <Navbar>
+      <Head title="Your IP" />
+      <div class="centered-content">
       <h2>{{ props.ip }}</h2>
     </div>
+    </Navbar>
   </template>
   
   <script setup>
     import Navbar from './Navbar.vue';
+    import { Head } from '@inertiajs/vue3'
 
 
   const props = defineProps(['ip']);
